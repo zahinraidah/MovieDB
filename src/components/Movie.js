@@ -1,4 +1,3 @@
-import react from "react";
 import { Link } from "react-router-dom";
 
 const Movie = (props) => {
@@ -14,12 +13,12 @@ const Movie = (props) => {
               style={{ width: "100", height: "200" }}
             />
           ) : (
-            <img
-              src={ImageURL}
-              alt=""
-              style={{ width: "100", height: "200" }}
-            />
-          )}
+              <img
+                src={ImageURL}
+                alt=""
+                style={{ width: "100", height: "200" }}
+              />
+            )}
 
           <span class="card-title">{props.data.title}</span>
         </div>

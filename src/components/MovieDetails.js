@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import React, { useState, useEffect } from "react";
 import { getMovieDetails } from "./../api/TMDB";
 import { Link } from "react-router-dom";
@@ -24,12 +25,12 @@ const MovieDetails = (props) => {
                   style={{ width: "300", height: "600" }}
                 />
               ) : (
-                <img
-                  src="https://picsum.photos/300/600"
-                  alt=""
-                  style={{ width: "300", height: "600" }}
-                />
-              )}
+                  <img
+                    src="https://picsum.photos/300/600"
+                    alt=""
+                    style={{ width: "300", height: "600" }}
+                  />
+                )}
               <span class="card-title">{currentMovie.original_title}</span>
             </div>
             <div class="card-content">
